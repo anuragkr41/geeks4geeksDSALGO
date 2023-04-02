@@ -27,5 +27,6 @@ class P4Solver{
 
     public Integer eulerMethodGCD(Integer num1, Integer num2){
         // For this we have an approach that the gcd is equal to the
+        return 1;
     }
 }
