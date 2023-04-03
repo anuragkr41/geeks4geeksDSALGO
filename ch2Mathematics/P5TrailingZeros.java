@@ -14,7 +14,10 @@ public class P5TrailingZeros {
         My solution was wrong as I didn't considered the case that what will happen when n = 25 as there will be 2 5s available
 
 
+
         Going by the solution, we will check only the number of 5s available and if n is divisible by i
+
+        Complexity is going to be Theta log(n)
          */
 
 
