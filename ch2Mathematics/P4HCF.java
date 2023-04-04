@@ -1,11 +1,15 @@
 package com.geekForGeeksDSCourse.ch2Mathematics;
 
+import java.util.ArrayList;
+
 public class P4HCF {
     public static void main(String[] args) {
         final Integer number1 = 120;
         final Integer number2 = 180;
         System.out.println("Answer: "+new P4Solver().hfc(number1, number2));
         System.out.println("Anser via EM "+ new P4Solver().eulerMethodGCD(number1, number2));
+
+        
 
         // I was able to calculate the Gcd wit the time complexity of O(min(n,m))
 
@@ -43,4 +47,8 @@ class P4Solver{
         }
 
     }
+}
+
+class Test{
+    private int age=40;
 }
