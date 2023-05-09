@@ -1,7 +1,6 @@
 package com.geekForGeeksDSCourse.RandomQuestionPractice;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class Anagram {
     /*
@@ -51,23 +50,21 @@ class AnaSolver {
         HashMap<Character, Integer> mapForS2 = new HashMap<>();
 
 
+        for (int i = 0; i < s1.length(); i++) {
 
-            for (int i = 0; i < s1.length(); i++) {
+            mapForS1.put(s1.charAt(i), mapForS1.getOrDefault(s1.charAt(i), 0) + 1);
+        }
 
-                mapForS1.put(s1.charAt(i), mapForS1.getOrDefault(s1.charAt(i),0)+1);
-            }
+        for (int i = 0; i < s2.length(); i++) {
 
-            for (int i = 0; i < s2.length(); i++) {
+            mapForS2.put(s2.charAt(i), mapForS2.getOrDefault(s2.charAt(i), 0) + 1);
+        }
 
-                mapForS2.put(s2.charAt(i), mapForS2.getOrDefault(s2.charAt(i),0)+1);
-            }
-
-            //reps--;
-
+        //reps--;
 
 
-        System.out.println(mapForS1.toString());
-        System.out.println(mapForS2.toString());
+        System.out.println(mapForS1);
+        System.out.println(mapForS2);
 
         return mapForS1.equals(mapForS2);
     }
