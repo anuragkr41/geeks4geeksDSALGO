@@ -21,6 +21,8 @@ public class V8RecursiveTraversalSingleLL {
         print(head.next);
     }
 }
+//Iterative solution is better than recursive solution as there is not auxilarry space required.
+
 
 
 /*
